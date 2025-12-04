@@ -72,7 +72,6 @@ class TestDataCleaner(unittest.TestCase):
         # Esto verifica valores, índices y tipos correctamente
         pdt.assert_series_equal(result["name"], expected_name_series, check_names=True)
 
-#DESDE ACA SE PUEDE MODIFICAR
     def test_drop_invalid_rows_removes_rows_with_missing_values(self):
         """Test que verifica que el método drop_invalid_rows elimina correctamente las filas
         que contienen valores faltantes (NaN o None) en las columnas especificadas.
